@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: crack-me-if-you-can
+  datasource:
+    url: jdbc:mysql://localhost:3306/crackme
+    username: ${DB_USERNAME:crackme}
+    password: ${DB_PASSWORD:crackme}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
